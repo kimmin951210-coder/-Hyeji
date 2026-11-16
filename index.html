@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a46cce">
+  <meta name="description" content="혜지LIVE 방송 안내 및 커뮤니티 페이지">
+  <title>혜지LIVE | 방송 안내</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: #241035; }
+    body { margin: 0; min-height: 100vh; display: flex; justify-content: center; background: #241035; }
+    .landing { width: 100%; max-width: 600px; position: relative; line-height: 0; }
+    .landing img { display: block; width: 100%; height: auto; }
+    .click-zone { position: absolute; left: 4.4%; width: 90%; z-index: 1; display: block; border-radius: 20px; cursor: pointer; }
+    .click-zone:focus-visible { outline: 4px solid #fff; outline-offset: -4px; box-shadow: 0 0 0 7px #ec3dbd; }
+    .zone1 { top: 45.0%; height: 10.5%; }
+    .zone2 { top: 56.0%; height: 10.1%; }
+    .zone3 { top: 66.6%; height: 10.0%; }
+    .zone4 { top: 77.3%; height: 10.2%; }
+    @media (prefers-reduced-motion: no-preference) {
+      .click-zone:hover { background: rgba(255,255,255,.08); }
+    }
+  </style>
+</head>
+<body>
+  <main class="landing" aria-label="혜지LIVE 안내 페이지">
+    <img src="./landing.png" width="941" height="1672" alt="혜지LIVE: 생방송 보러가기, 오늘의 방송 일정, 커뮤니티 문의, 혜지 소통방" fetchpriority="high">
+    <!-- 링크는 사용자가 제공한 참고 HTML에 있는 주소입니다. 실제 운영 전 목적지 확인 권장. -->
+    <a class="click-zone zone1" href="http://xn--or3b21d71b.tv/" target="_blank" rel="noopener noreferrer" aria-label="생방송 보러가기 (새 탭)"></a>
+    <a class="click-zone zone2" href="https://open.kakao.com/o/s266v8Ag" target="_blank" rel="noopener noreferrer" aria-label="오늘의 방송 일정 (새 탭)"></a>
+    <a class="click-zone zone3" href="https://telegram.me/storyinquiry" target="_blank" rel="noopener noreferrer" aria-label="커뮤니티 문의 (새 탭)"></a>
+    <a class="click-zone zone4" href="https://open.kakao.com/o/gJqGHqLi" target="_blank" rel="noopener noreferrer" aria-label="혜지 소통방 (새 탭)"></a>
+  </main>
+</body>
+</html>
